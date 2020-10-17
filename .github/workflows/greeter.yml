@@ -1,0 +1,13 @@
+name: “greeter.yml workflow”
+
+on: [ push ]
+
+jobs:
+  job-1:
+    name: Greet our reader
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a greeting in stdout
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: ’Person'
