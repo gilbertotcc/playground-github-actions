@@ -1,0 +1,10 @@
+name: First greeting workflow
+
+on: [ watch ]
+
+jobs:
+  greetings-from-actions:
+    name: Greet
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello from GitHub Actions"
